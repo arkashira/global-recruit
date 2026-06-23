@@ -1,14 +1,15 @@
-# Student Communications
-A simple messaging system for agency staff to communicate with students.
+# Commission Tracker
 
-## Features
-* Send messages to students
-* Categorize messages by application status
-* Send notifications to staff and students for new messages
+A simple commission tracking system.
 
 ## Usage
-1. Create a `StudentCommunications` instance
-2. Send a message using `send_message`
-3. Get messages using `get_messages`
-4. Send a notification using `send_notification`
-5. Categorize messages using `categorize_messages`
+
+1. Create a new instance of the `CommissionTracker` class.
+2. Add commissions using the `add_commission` method.
+3. Get the total, pending, and paid commissions using the `get_total_commissions`, `get_pending_commissions`, and `get_paid_commissions` methods.
+4. Update the status of a commission using the `update_commission_status` method.
+5. Generate a PDF statement using the `generate_pdf_statement` method.
+
+## Testing
+
+Run the tests using `pytest`.
