@@ -1,15 +1,11 @@
-# Commission Tracker
+# Commission Calculator
 
-A simple commission tracking system.
+A simple commission calculator for calculating commissions on enrollments.
 
 ## Usage
 
-1. Create a new instance of the `CommissionTracker` class.
-2. Add commissions using the `add_commission` method.
-3. Get the total, pending, and paid commissions using the `get_total_commissions`, `get_pending_commissions`, and `get_paid_commissions` methods.
-4. Update the status of a commission using the `update_commission_status` method.
-5. Generate a PDF statement using the `generate_pdf_statement` method.
-
-## Testing
-
-Run the tests using `pytest`.
+1. Create a `Program` object with a name and commission rate.
+2. Create an `Agent` object with a name and a dictionary of programs.
+3. Create an `Enrollment` object with a program name, tuition amount, discount amount, and agent name.
+4. Use the `calculate_commission` function to calculate the commission for the enrollment.
+5. Use the `update_agent_dashboard` function to update the agent's dashboard with the commission.
