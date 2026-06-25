@@ -1,11 +1,16 @@
-# Commission Calculator
+# Document Manager
+A simple document manager that allows uploading, searching, and managing documents.
 
-A simple commission calculator for calculating commissions on enrollments.
+## Features
+* Upload documents with metadata (type, expiry date)
+* Search documents by type
+* Get, update, and delete documents
 
 ## Usage
+1. Create a `Document` object with the desired metadata and content.
+2. Upload the document using the `upload_document` method.
+3. Search for documents by type using the `search_documents` method.
+4. Get, update, or delete a document using the `get_document`, `update_document`, or `delete_document` methods.
 
-1. Create a `Program` object with a name and commission rate.
-2. Create an `Agent` object with a name and a dictionary of programs.
-3. Create an `Enrollment` object with a program name, tuition amount, discount amount, and agent name.
-4. Use the `calculate_commission` function to calculate the commission for the enrollment.
-5. Use the `update_agent_dashboard` function to update the agent's dashboard with the commission.
+## Testing
+Run the tests using `pytest` to ensure the implementation is correct.
